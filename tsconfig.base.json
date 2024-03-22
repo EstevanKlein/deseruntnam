@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "incremental": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "importHelpers": true,
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "target": "es5",
+    "paths": {
+      "@zilliqa-js/*": [
+        "./zilliqa/js/*",
+
+        "./bazel-out/host/bin/zilliqa/js/*",
+        "./bazel-out/darwin-fastbuild/bin/zilliqa/js/*",
+        "./bazel-out/darwin_arm64-fastbuild/bin/zilliqa/js/*",
+        "./bazel-out/k8-fastbuild/bin/zilliqa/js/*",
+        "./bazel-out/x64_windows-fastbuild/bin/zilliqa/js/*",
+        "./bazel-out/darwin-dbg/bin/zilliqa/js/*",
+        "./bazel-out/k8-dbg/bin/zilliqa/js/*",
+        "./bazel-out/x64_windows-dbg/bin/zilliqa/js/*"
+      ]
+    },
+    "rootDirs": [
+      ".",
+      "./bazel-out/host/bin/zilliqa",
+      "./bazel-out/darwin-fastbuild/bin/zilliqa",
+      "./bazel-out/darwin_arm64-fastbuild/bin/zilliqa",
+      "./bazel-out/k8-fastbuild/bin/zilliqa",
+      "./bazel-out/x64_windows-fastbuild/bin/zilliqa",
+      "./bazel-out/darwin-dbg/bin/zilliqa",
+      "./bazel-out/k8-dbg/bin/zilliqa",
+      "./bazel-out/x64_windows-dbg/bin/zilliqa"
+    ]
+  },
+  "exclude": ["node_modules", "dist"]
+}
